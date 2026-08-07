@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "paths": {
+      "@lamo/agent-registry": ["../lamo-agent-registry/src/index.ts"],
+      "@lamo/approval-engine": ["../lamo-approval-engine/src/index.ts"],
+      "@lamo/model-router": ["../lamo-model-router/src/index.ts"],
+      "@lamo/orchestrator": ["../lamo-orchestrator/src/index.ts"],
+      "@lamo/policy-engine": ["../lamo-policy-engine/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

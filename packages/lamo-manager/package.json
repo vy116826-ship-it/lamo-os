@@ -1,0 +1,25 @@
+{
+  "name": "@lamo/manager",
+  "version": "1.0.0",
+  "description": "LAMO Manager autonomous multi-agent pipeline orchestrator",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "types:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lamo/agent-registry": "workspace:*",
+    "@lamo/approval-engine": "workspace:*",
+    "@lamo/model-router": "workspace:*",
+    "@lamo/orchestrator": "workspace:*",
+    "@lamo/policy-engine": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
