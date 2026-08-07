@@ -1,0 +1,23 @@
+{
+  "name": "@lamo/apps",
+  "version": "1.0.0",
+  "description": "Specialized Gadget applications for LAMO OS (Visa, Marketing, Engineering)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "types:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lamo/agent-registry": "workspace:*",
+    "@lamo/approval-engine": "workspace:*",
+    "@lamo/policy-engine": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
