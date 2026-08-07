@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "workshop-backend",
+  "routes": [
+    { "pattern": "os.tinhgon.com", "custom_domain": true }
+  ],
   "main": ".wrangler/validate/src/server.ts",
   "build": {
     "command": "pnpm run build:worker",
